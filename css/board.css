@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul.board{
+    float: right;
+    list-style-type: none;
+    box-shadow: rgb(0,0,0,0.2);
+}
+ul.board li{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+ul.board li a{
+    color: white;
+    transition: 0.6s;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+}
+
+ul.board li a:hover{
+    border-radius: 10px;
+    background-color: rgb(216, 146, 16);
+    color:black
+}
+
+
+ul.board li.active a{
+    border-radius: 10px;
+    background-color: rgb(216, 146, 16);
+    color:black
+}
+ul.board li.active{
+    animation: movement 1.2s ease infinite;
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+
+
+@keyframes movement{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+        }
+    }
+
+
+
