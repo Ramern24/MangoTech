@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangoTech</title>
+    <title>Tienda Palacios Tech</title>
     <link rel="stylesheet" href="tienda.component.css">
     <script src="main.js"></script>
     <link rel="icon" type="image/x-icon" href="/mango4.jpg">
@@ -12,31 +12,208 @@
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li><a href="app.component.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Nuestros Servicios</a>
-                <div class="dropdown-content">
-                    <a href="#">Desarrollo de Software Empresarial/Pymes</a>
-                    <a href="#">Diseño y Desarrollo Web</a>
-                    <a href="#">Consultoría de TI</a>
-                    <a href="#">Integración de Sistemas</a>
-                    <a href="#">Hardware, Accesorios y Licencias</a>
-                    <a href="#">Gaming y Profesionales</a>
+   <!--Header, y menu desplegable-->
+    <nav class="nav">
+
+    <div class="nav__container">
+
+        <h1 class="nav__title">Tienda Palacios Tech</h1>
+
+        <a href="#menu" class="nav__menu">
+            <img src="/assets/menu.svg" class="nav__icon">
+        </a>
+
+        <a href="#" class="nav__menu nav__menu--second">
+            <img src="/assets/close.svg" class="nav__icon ">
+        </a>
+
+        <ul class="dropdown" id="menu">
+
+            <li class="dropdown__list">
+                <a href="../index/index.component.html" class="dropdown__link">
+                    <img src="/assets/house.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Inicio</span>
+                </a>
+            </li>
+
+            <li class="dropdown__list">
+                <a href="#" class="dropdown__link">
+                    <img src="/assets/projects.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Servicios</span>
+                    <img src="/assets/down.svg" class="dropdown__arrow">
+
+                    <input type="checkbox" class="dropdown__check">
+                </a>
+
+                <div class="dropdown__content">
+
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Diseño Gráfico</a>
+                        </li>
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Tipitapa Online</a>
+                        </li>
+
+                    </ul>
+
                 </div>
             </li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Iniciar Sesión</a></li>
+
+            <li class="dropdown__list">
+                <a href="#" class="dropdown__link">
+                    <img src="/assets/email.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Contacto</span>
+                    <img src="/assets/down.svg" class="dropdown__arrow">
+
+                    <input type="checkbox" class="dropdown__check">
+                </a>
+
+                <div class="dropdown__content">
+
+                    <ul class="dropdown__sub">
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">TipitapaTech@mail.com</a>
+                        </li>
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">+505 84017655</a>
+                        </li>
+                      
+
+                    </ul>
+
+                </div>
+            </li>
+
+            <li class="dropdown__list">
+                <a href="#" class="dropdown__link">
+                    <img src="/assets/help.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Ayuda</span>
+                </a>
+            </li>
+
         </ul>
-    </nav>
+
+    </div>
+
+</nav>
 </header>
 
 <main>
     <div class="card">
     <img src="/img/mango.jpg" alt="Producto 1">
         <h3>Nombre del Producto 1</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
+    <p>Precio: C$XX.XX</p>
+    <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
+    <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
+    <button>Añadir al Carrito
+        <i class="fa fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="card">
+    <img src="/img/mango2.jpg" alt="Producto 2">
+    <h3>Nombre del Producto 2</h3>
     <p>Precio: C$XX.XX</p>
     <p>Precio de envío (casco urbano Tipitapa): C$X.XX</p>
     <p>Precio de envío (fuera de Tipitapa): C$X.XX</p>
@@ -63,7 +240,7 @@
         <li><a href="#"><i class="fab fa-instagram"></i><span> Instagram</span></a></li>
         <li><a href="#"><i class="fab fa-facebook"></i><span> Facebook</span></a></li>
         <li><i class="fa fa-phone-square"></i><a href="#"><span> Teléfono +505 **** ****</span></a></li>
-        <li><i class="fa fa-envelope-o"></i><a href="#"><span> Correo: MangoTechSolutions@outlook.com</span></a></li>
+        <li><i class="fa fa-envelope-o"></i><a href="#"><span> Correo: PalaciosTech@outlook.com</span></a></li>
         <li><i class="fa fa-map-marker"></i><a href="#"><span> Dirección: Managua, Nicaragua</span></a></li>
     </ul>
 </footer>

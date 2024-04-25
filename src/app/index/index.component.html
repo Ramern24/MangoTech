@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palacios Tech</title>
+    <link rel="icon" type="image/x-icon" href="/mango4.jpg">
+    <link rel="stylesheet" href="index.component.css">
+</head>
+<body>
+    <!--Header, y menu desplegable-->
+    <nav class="nav">
+
+        <div class="nav__container">
+
+            <h1 class="nav__title">Palacios Tech</h1>
+
+            <a href="#menu" class="nav__menu">
+                <img src="/assets/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__menu nav__menu--second">
+                <img src="/assets/close.svg" class="nav__icon ">
+            </a>
+
+            <ul class="dropdown" id="menu">
+
+                <li class="dropdown__list">
+                    <a href="../index/index.component.html" class="dropdown__link">
+                        <img src="/assets/house.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="/assets/projects.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Servicios</span>
+                        <img src="/assets/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="../tienda/tienda.component.html" target="_blank" class="dropdown__anchor">Hardware, Accesorios y Licencias</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" target="_blank" class="dropdown__anchor">Diseño Gráfico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" target="_blank" class="dropdown__anchor">Tipitapa Online</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="/assets/email.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Contacto</span>
+                        <img src="/assets/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">TipitapaTech@mail.com</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">+505 84017655</a>
+                            </li>
+                          
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="/assets/help.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Ayuda</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+<!--Todo el cuerpo de pagina-->
+<main>
+    <h2>Sobre Palacios Tech</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error est eius quam nulla ea sunt nam dolorum vero molestiae dolore, minima accusantium, nemo provident eos ad tempore nobis ut nisi.</p>
+    <main>
+        <!-- En el cuerpo de tu página después del menú desplegable -->
+<section id="offer-gallery">
+    <h2>Ofertas del Mes</h2>
+    <div class="offer-gallery" >
+        <button class="prev-button" onclick="prevOffer()">&#10094;</button>
+        <div class="offer-slide"></div>
+        <button class="next-button" onclick="nextOffer()">&#10095;</button>
+        
+    </div>
+</section>
+
+<script src="ofertas.js"></script>
+
+
+      <section id="about">
+      </section>
+
+      <section id="gallery">
+          <h2>Servicios Principales</h2>
+          <div class="image-gallery">
+              <div class="image-item">
+                  <img src="/img/delivery.jpg" alt="Imagen 1">
+                  <div class="image-overlay">
+                      <h3>Tipitapa Online</h3>
+                      <p>Tienda Online de Conveniencia donde todos los tipitapeños podrán comprar en línea y eligir su delivery favorito</p>
+                      <a href="#" target="_blank" class="button">Ir a Tipitapa Online</a>
+                  </div>
+              </div>
+      </section>
+
+    <section id="other-services">
+        <h2>Otros Servicios</h2>
+        <div class="service-item">
+          <img src="/img/hardware.jpg" alt="Servicio de Tienda de Informática">
+          <div class="service-overlay">
+              <a href="../tienda/tienda.component.html" target="_blank" class="button">Hardware, Accesorios y Licencias</a>
+          </div>
+      </div>
+      <div class="service-item">
+        <img src="/img/consultoria.jpg" alt="Servicio de Tienda de Informática">
+        <div class="service-overlay">
+            <a href="#" class="button">Diseño Gráfico</a>
+        </div>
+    </div>
+  </main>
+  
+  </main>
+
+  <footer>
+    <p>Visítanos en nuestras redes sociales y descubre ofertas:</p>
+    <ul>
+        <li><a href="#"><i class="fab fa-instagram"></i><span> Instagram</span></a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i><span> Facebook</span></a></li>
+        <li><i class="fa fa-phone-square"></i><a href="#"><span> Teléfono +505 **** ****</span></a></li>
+        <li><i class="fa fa-envelope-o"></i><a href="#"><span> Correo: PalaciosTech@outlook.com</span></a></li>
+        <li><i class="fa fa-map-marker"></i><a href="#"><span> Dirección: Managua, Nicaragua</span></a></li>
+    </ul>
+</footer>
+</body>
+</html>
+
+
+<router-outlet />
+
+
+</body>
+</html>
