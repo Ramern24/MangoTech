@@ -13,8 +13,98 @@
 	<link rel="stylesheet" type="text/css" href="/Loginforms/css/util1.css">
 	<link rel="stylesheet" type="text/css" href="/Loginforms/css/main.css">
     <link rel="stylesheet" type="text/css" href="/Loginforms/css/board.css">
+	<link rel="stylesheet" type="text/css" href="/src/app/logeo/logeo.component.css">
 </head>
 <body>
+	   <!--Header, y menu desplegable-->
+	   <nav class="nav">
+
+		<div class="nav__container">
+	
+			<h1 class="nav__title">Login</h1>
+	
+			<a href="#menu" class="nav__menu">
+				<img src="/assets/menu.svg" class="nav__icon">
+			</a>
+	
+			<a href="#" class="nav__menu nav__menu--second">
+				<img src="/assets/close.svg" class="nav__icon ">
+			</a>
+	
+			<ul class="dropdown" id="menu">
+	
+				<li class="dropdown__list">
+					<a href="../index/index.component.html" class="dropdown__link">
+						<img src="/assets/house.svg" class="dropdown__icon">
+						<span class="dropdown__span">Inicio</span>
+					</a>
+				</li>
+	
+				<li class="dropdown__list">
+					<a href="#" class="dropdown__link">
+						<img src="/assets/projects.svg" class="dropdown__icon">
+						<span class="dropdown__span">Servicios</span>
+						<img src="/assets/down.svg" class="dropdown__arrow">
+	
+						<input type="checkbox" class="dropdown__check">
+					</a>
+	
+					<div class="dropdown__content">
+	
+						<ul class="dropdown__sub">
+							<li class="dropdown__li">
+                                <a href="../tienda/tienda.component.html" target="_blank" class="dropdown__anchor">Hardware, Accesorios y Licencias</a>
+                            </li>
+							<li class="dropdown__li">
+								<a href="#" class="dropdown__anchor">Diseño Gráfico</a>
+							</li>
+							<li class="dropdown__li">
+								<a href="#" class="dropdown__anchor">Tipitapa Online</a>
+							</li>
+	
+						</ul>
+	
+					</div>
+				</li>
+	
+				<li class="dropdown__list">
+					<a href="#" class="dropdown__link">
+						<img src="/assets/email.svg" class="dropdown__icon">
+						<span class="dropdown__span">Contacto</span>
+						<img src="/assets/down.svg" class="dropdown__arrow">
+	
+						<input type="checkbox" class="dropdown__check">
+					</a>
+	
+					<div class="dropdown__content">
+	
+						<ul class="dropdown__sub">
+	
+							<li class="dropdown__li">
+								<a href="#" class="dropdown__anchor">TipitapaTech@mail.com</a>
+							</li>
+							<li class="dropdown__li">
+								<a href="#" class="dropdown__anchor">+505 84017655</a>
+							</li>
+						  
+	
+						</ul>
+	
+					</div>
+				</li>
+	
+				<li class="dropdown__list">
+					<a href="#" class="dropdown__link">
+						<img src="/assets/help.svg" class="dropdown__icon">
+						<span class="dropdown__span">Ayuda</span>
+					</a>
+				</li>
+	
+			</ul>
+	
+		</div>
+	
+	</nav>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
