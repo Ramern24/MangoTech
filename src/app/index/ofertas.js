@@ -1,7 +1,7 @@
 // JavaScript para la galería de ofertas
 let currentOffer = 0;
 const offerImages = [
-    "/img/mango.jpg",
+    "/img/ofertas.jpg",
     "/img/mango2.jpg",
     "/img/mango3.jpg"
 ]; // Ruta de las imágenes de oferta

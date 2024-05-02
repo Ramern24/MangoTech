@@ -1,6 +1,7 @@
 /* Header */
 .nav{
-    background-color: #830248;
+    background-color: #18186B;
+
 
 
     --img1: scale(1);
@@ -32,6 +33,10 @@
 .nav__title{
     color: #fff;
     grid-area: title;
+}
+
+.nav__container img{
+    height: 50px;
 }
 
 
