@@ -2,8 +2,8 @@
 let currentOffer = 0;
 const offerImages = [
     "/img/ofertas.jpg",
-    "/img/mango2.jpg",
-    "/img/mango3.jpg"
+    "/img/mango.jpg",
+    "/img/ofertas.jpg"
 ]; // Ruta de las imágenes de oferta
 
 function showOffer() {
